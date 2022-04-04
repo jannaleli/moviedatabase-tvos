@@ -23,6 +23,8 @@
 		10E247F627EB5F6C008D3887 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E247F527EB5F6C008D3887 /* LoginViewController.swift */; };
 		10E247F927EB60F8008D3887 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E247F827EB60F8008D3887 /* UIView.swift */; };
 		10E247FB27EB6193008D3887 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E247FA27EB6193008D3887 /* UIButton.swift */; };
+		10FBC73427FB418800F6F205 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBC73327FB418800F6F205 /* Store.swift */; };
+		10FBC73627FB489300F6F205 /* ErasedObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBC73527FB489300F6F205 /* ErasedObservableObject.swift */; };
 		972D51E0732E92ECF3A4CD6F /* Pods_MovieDatabasetVOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31696F88C5083A33B3B08600 /* Pods_MovieDatabasetVOSTests.framework */; };
 		A3FE5CB880B223033925C7AA /* Pods_MovieDatabasetVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77ADFE5226354DBC12213DE /* Pods_MovieDatabasetVOS.framework */; };
 		AB3A7F0127EB519B00E58101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A7F0027EB519B00E58101 /* AppDelegate.swift */; };
@@ -70,6 +72,8 @@
 		10E247F527EB5F6C008D3887 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		10E247F827EB60F8008D3887 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		10E247FA27EB6193008D3887 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		10FBC73327FB418800F6F205 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		10FBC73527FB489300F6F205 /* ErasedObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErasedObservableObject.swift; sourceTree = "<group>"; };
 		31696F88C5083A33B3B08600 /* Pods_MovieDatabasetVOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDatabasetVOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65469F0ECCA997AC4C5F6380 /* Pods-MovieDatabasetVOS-MovieDatabasetVOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDatabasetVOS-MovieDatabasetVOSUITests.release.xcconfig"; path = "Target Support Files/Pods-MovieDatabasetVOS-MovieDatabasetVOSUITests/Pods-MovieDatabasetVOS-MovieDatabasetVOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A77ADFE5226354DBC12213DE /* Pods_MovieDatabasetVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDatabasetVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +127,7 @@
 		102A223027EC9A0800BC0B69 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				10FBC73227FB417C00F6F205 /* Store */,
 				102A223127EC9A0D00BC0B69 /* Theme Manager */,
 			);
 			path = Shared;
@@ -209,6 +214,15 @@
 				10A214B927EBCDCB00E135EC /* StackView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10FBC73227FB417C00F6F205 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				10FBC73327FB418800F6F205 /* Store.swift */,
+				10FBC73527FB489300F6F205 /* ErasedObservableObject.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		3CCE849C70020D15290059E2 /* Pods */ = {
@@ -540,9 +554,11 @@
 				10B4B2A027ECF45C00CD1123 /* AuthViewSwiftUI.swift in Sources */,
 				10BABA6727F4DA06007DDC10 /* MovieItem.swift in Sources */,
 				10E247F427EB5F60008D3887 /* LoginView.swift in Sources */,
+				10FBC73627FB489300F6F205 /* ErasedObservableObject.swift in Sources */,
 				10B4B2A227ED007400CD1123 /* ActivViewControllerHosting.swift in Sources */,
 				102A223527EC9B9B00BC0B69 /* Color.swift in Sources */,
 				10E247EE27EB5722008D3887 /* Coordinator.swift in Sources */,
+				10FBC73427FB418800F6F205 /* Store.swift in Sources */,
 				10816F9C27F4D569001821D3 /* HomepageView.swift in Sources */,
 				10A214B427EBC97400E135EC /* ActivationView.swift in Sources */,
 				10A214B827EBCA7100E135EC /* ActivationCoordinator.swift in Sources */,
