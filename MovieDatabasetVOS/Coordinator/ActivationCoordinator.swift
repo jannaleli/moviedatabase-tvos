@@ -59,16 +59,16 @@ extension ActivationCoordinator: ActivViewControllerHostingDelegate {
     
 }
 
-extension ActivationCoordinator: ActivationViewControllerDelegate {
-    func changeLanguage() {
-        print("Change Language")
-    }
-    
-    func goToRegisterCode() {
-        print("Go To Register Code Screen")
-    }
-    
-    
-}
+//extension ActivationCoordinator: ActivationViewControllerDelegate {
+//    func changeLanguage() {
+//        print("Change Language")
+//    }
+//    
+//    func goToRegisterCode() {
+//        print("Go To Register Code Screen")
+//    }
+//    
+//    
+//}
 
 

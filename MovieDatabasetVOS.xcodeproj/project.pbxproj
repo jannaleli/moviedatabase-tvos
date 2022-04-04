@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		102A223327EC9B9000BC0B69 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A223227EC9B9000BC0B69 /* Theme.swift */; };
-		102A223527EC9B9B00BC0B69 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A223427EC9B9B00BC0B69 /* Color.swift */; };
+		102A223527EC9B9B00BC0B69 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A223427EC9B9B00BC0B69 /* Colors.swift */; };
 		10816F9C27F4D569001821D3 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10816F9B27F4D569001821D3 /* HomepageView.swift */; };
-		10A214B427EBC97400E135EC /* ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A214B327EBC97400E135EC /* ActivationView.swift */; };
-		10A214B627EBC9D400E135EC /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A214B527EBC9D400E135EC /* ActivationViewController.swift */; };
 		10A214B827EBCA7100E135EC /* ActivationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A214B727EBCA7100E135EC /* ActivationCoordinator.swift */; };
 		10A214BA27EBCDCB00E135EC /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A214B927EBCDCB00E135EC /* StackView.swift */; };
 		10B4B2A027ECF45C00CD1123 /* AuthViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B4B29F27ECF45C00CD1123 /* AuthViewSwiftUI.swift */; };
@@ -35,6 +33,12 @@
 		AB3A7F1527EB519C00E58101 /* MovieDatabasetVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A7F1427EB519C00E58101 /* MovieDatabasetVOSTests.swift */; };
 		AB3A7F1F27EB519C00E58101 /* MovieDatabasetVOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A7F1E27EB519C00E58101 /* MovieDatabasetVOSUITests.swift */; };
 		AB3A7F2127EB519C00E58101 /* MovieDatabasetVOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3A7F2027EB519C00E58101 /* MovieDatabasetVOSUITestsLaunchTests.swift */; };
+		ABE2E37827FB61C900AA75A4 /* AnyObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E37727FB61C900AA75A4 /* AnyObservableObject.swift */; };
+		ABE2E37B27FB75C900AA75A4 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E37A27FB75C900AA75A4 /* UserSession.swift */; };
+		ABE2E37F27FB766A00AA75A4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E37E27FB766A00AA75A4 /* Movie.swift */; };
+		ABE2E38227FB784400AA75A4 /* UserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E38127FB784400AA75A4 /* UserDefaultsBacked.swift */; };
+		ABE2E38527FB7AC200AA75A4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E38427FB7AC200AA75A4 /* ViewModel.swift */; };
+		ABE2E38727FB7C8500AA75A4 /* AuthenticationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E38627FB7C8500AA75A4 /* AuthenticationAssembly.swift */; };
 		F14FE9CB74E2BA18E0374B21 /* Pods_MovieDatabasetVOS_MovieDatabasetVOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CE20962892A475057CB1B6 /* Pods_MovieDatabasetVOS_MovieDatabasetVOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +61,8 @@
 
 /* Begin PBXFileReference section */
 		102A223227EC9B9000BC0B69 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		102A223427EC9B9B00BC0B69 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		102A223427EC9B9B00BC0B69 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		10816F9B27F4D569001821D3 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
-		10A214B327EBC97400E135EC /* ActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationView.swift; sourceTree = "<group>"; };
-		10A214B527EBC9D400E135EC /* ActivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
 		10A214B727EBCA7100E135EC /* ActivationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationCoordinator.swift; sourceTree = "<group>"; };
 		10A214B927EBCDCB00E135EC /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		10B4B29F27ECF45C00CD1123 /* AuthViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewSwiftUI.swift; sourceTree = "<group>"; };
@@ -88,6 +90,12 @@
 		AB3A7F1A27EB519C00E58101 /* MovieDatabasetVOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDatabasetVOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3A7F1E27EB519C00E58101 /* MovieDatabasetVOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDatabasetVOSUITests.swift; sourceTree = "<group>"; };
 		AB3A7F2027EB519C00E58101 /* MovieDatabasetVOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDatabasetVOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ABE2E37727FB61C900AA75A4 /* AnyObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyObservableObject.swift; sourceTree = "<group>"; };
+		ABE2E37A27FB75C900AA75A4 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		ABE2E37E27FB766A00AA75A4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		ABE2E38127FB784400AA75A4 /* UserDefaultsBacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsBacked.swift; sourceTree = "<group>"; };
+		ABE2E38427FB7AC200AA75A4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		ABE2E38627FB7C8500AA75A4 /* AuthenticationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAssembly.swift; sourceTree = "<group>"; };
 		B50AC63B1C5AC4482BE58264 /* Pods-MovieDatabasetVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDatabasetVOS.release.xcconfig"; path = "Target Support Files/Pods-MovieDatabasetVOS/Pods-MovieDatabasetVOS.release.xcconfig"; sourceTree = "<group>"; };
 		BC401B7FC1A4F0C06319B164 /* Pods-MovieDatabasetVOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDatabasetVOSTests.release.xcconfig"; path = "Target Support Files/Pods-MovieDatabasetVOSTests/Pods-MovieDatabasetVOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		BED7D05D0318D675CB1D0D39 /* Pods-MovieDatabasetVOS-MovieDatabasetVOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDatabasetVOS-MovieDatabasetVOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-MovieDatabasetVOS-MovieDatabasetVOSUITests/Pods-MovieDatabasetVOS-MovieDatabasetVOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +135,7 @@
 		102A223027EC9A0800BC0B69 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				ABE2E38027FB782900AA75A4 /* PropertyWrappers */,
 				10FBC73227FB417C00F6F205 /* Store */,
 				102A223127EC9A0D00BC0B69 /* Theme Manager */,
 			);
@@ -137,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				102A223227EC9B9000BC0B69 /* Theme.swift */,
-				102A223427EC9B9B00BC0B69 /* Color.swift */,
+				102A223427EC9B9B00BC0B69 /* Colors.swift */,
 			);
 			path = "Theme Manager";
 			sourceTree = "<group>";
@@ -163,10 +172,9 @@
 		10A214B227EBC90800E135EC /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				10A214B327EBC97400E135EC /* ActivationView.swift */,
-				10A214B527EBC9D400E135EC /* ActivationViewController.swift */,
 				10B4B29F27ECF45C00CD1123 /* AuthViewSwiftUI.swift */,
 				10B4B2A127ED007400CD1123 /* ActivViewControllerHosting.swift */,
+				ABE2E38627FB7C8500AA75A4 /* AuthenticationAssembly.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -219,8 +227,8 @@
 		10FBC73227FB417C00F6F205 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				ABE2E38327FB7AA600AA75A4 /* View Model */,
 				10FBC73327FB418800F6F205 /* Store.swift */,
-				10FBC73527FB489300F6F205 /* ErasedObservableObject.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 		AB3A7EFF27EB519B00E58101 /* MovieDatabasetVOS */ = {
 			isa = PBXGroup;
 			children = (
+				ABE2E37927FB75BA00AA75A4 /* Networking */,
 				102A223027EC9A0800BC0B69 /* Shared */,
 				10A214B127EBC8F700E135EC /* Component */,
 				10E247F727EB60E1008D3887 /* Extensions */,
@@ -302,6 +311,49 @@
 				AB3A7F2027EB519C00E58101 /* MovieDatabasetVOSUITestsLaunchTests.swift */,
 			);
 			path = MovieDatabasetVOSUITests;
+			sourceTree = "<group>";
+		};
+		ABE2E37927FB75BA00AA75A4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2E37C27FB764200AA75A4 /* Model */,
+				ABE2E37A27FB75C900AA75A4 /* UserSession.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ABE2E37C27FB764200AA75A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2E37D27FB764B00AA75A4 /* Movie */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABE2E37D27FB764B00AA75A4 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2E37E27FB766A00AA75A4 /* Movie.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		ABE2E38027FB782900AA75A4 /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2E38127FB784400AA75A4 /* UserDefaultsBacked.swift */,
+			);
+			path = PropertyWrappers;
+			sourceTree = "<group>";
+		};
+		ABE2E38327FB7AA600AA75A4 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2E37727FB61C900AA75A4 /* AnyObservableObject.swift */,
+				10FBC73527FB489300F6F205 /* ErasedObservableObject.swift */,
+				ABE2E38427FB7AC200AA75A4 /* ViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,7 +597,9 @@
 			files = (
 				10E247F627EB5F6C008D3887 /* LoginViewController.swift in Sources */,
 				AB3A7F0327EB519B00E58101 /* ViewController.swift in Sources */,
-				10A214B627EBC9D400E135EC /* ActivationViewController.swift in Sources */,
+				ABE2E37F27FB766A00AA75A4 /* Movie.swift in Sources */,
+				ABE2E38227FB784400AA75A4 /* UserDefaultsBacked.swift in Sources */,
+				ABE2E38527FB7AC200AA75A4 /* ViewModel.swift in Sources */,
 				AB3A7F0127EB519B00E58101 /* AppDelegate.swift in Sources */,
 				102A223327EC9B9000BC0B69 /* Theme.swift in Sources */,
 				10E247FB27EB6193008D3887 /* UIButton.swift in Sources */,
@@ -554,13 +608,15 @@
 				10B4B2A027ECF45C00CD1123 /* AuthViewSwiftUI.swift in Sources */,
 				10BABA6727F4DA06007DDC10 /* MovieItem.swift in Sources */,
 				10E247F427EB5F60008D3887 /* LoginView.swift in Sources */,
+				ABE2E37827FB61C900AA75A4 /* AnyObservableObject.swift in Sources */,
 				10FBC73627FB489300F6F205 /* ErasedObservableObject.swift in Sources */,
+				ABE2E38727FB7C8500AA75A4 /* AuthenticationAssembly.swift in Sources */,
 				10B4B2A227ED007400CD1123 /* ActivViewControllerHosting.swift in Sources */,
-				102A223527EC9B9B00BC0B69 /* Color.swift in Sources */,
+				102A223527EC9B9B00BC0B69 /* Colors.swift in Sources */,
 				10E247EE27EB5722008D3887 /* Coordinator.swift in Sources */,
 				10FBC73427FB418800F6F205 /* Store.swift in Sources */,
+				ABE2E37B27FB75C900AA75A4 /* UserSession.swift in Sources */,
 				10816F9C27F4D569001821D3 /* HomepageView.swift in Sources */,
-				10A214B427EBC97400E135EC /* ActivationView.swift in Sources */,
 				10A214B827EBCA7100E135EC /* ActivationCoordinator.swift in Sources */,
 				10A214BA27EBCDCB00E135EC /* StackView.swift in Sources */,
 			);

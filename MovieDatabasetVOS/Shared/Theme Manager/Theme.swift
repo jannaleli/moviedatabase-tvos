@@ -9,5 +9,6 @@ import Foundation
 
 final class Theme {
     @Published var colors: Colors = .default
+    
     //@Published var fonts: Fonts = .default
 }
