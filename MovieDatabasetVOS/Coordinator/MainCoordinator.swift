@@ -7,25 +7,29 @@
 
 import Foundation
 import UIKit
+import Swinject
 
-protocol AuthCoordinatorDelegate: AnyObject {
+protocol MainCoordinatorDelegate: AnyObject {
     func authIsCompleted()
 }
 
-final class AuthCoordinator: Coordinator {
+final class MainCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     
      var navigationController: UINavigationController?
     
+    private let assembler: Assembler
+    
     var window = UIWindow()
     
-    weak var delegate: AuthCoordinatorDelegate?
+    weak var delegate: MainCoordinatorDelegate?
     
     // MARK: - Initialization
 
-    init() {
+    init(assembler: Assembler) {
         navigationController = UINavigationController()
         self.window = UIWindow()
+        self.assembler = assembler
 
     }
     
@@ -48,7 +52,7 @@ final class AuthCoordinator: Coordinator {
     }
 }
 
-extension AuthCoordinator: ActivationCoordinatorDelegate {
+extension MainCoordinator: ActivationCoordinatorDelegate {
 
     
     func goToRegistrationCodeView() {

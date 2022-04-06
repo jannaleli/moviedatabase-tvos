@@ -434,6 +434,8 @@ PODS:
   - SwiftFormat/CLI (0.49.5)
   - SwiftyJSON (4.3.0)
   - Swinject (2.8.1)
+  - SwinjectAutoregistration (2.7.0):
+    - Swinject (~> 2.7)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
@@ -442,6 +444,7 @@ DEPENDENCIES:
   - SwiftFormat/CLI (~> 0.49)
   - SwiftyJSON (~> 4.0)
   - Swinject
+  - SwinjectAutoregistration (= 2.7.0)
 
 SPEC REPOS:
   trunk:
@@ -464,6 +467,7 @@ SPEC REPOS:
     - SwiftFormat
     - SwiftyJSON
     - Swinject
+    - SwinjectAutoregistration
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -485,7 +489,8 @@ SPEC CHECKSUMS:
   SwiftFormat: 803e5a44e083cf414b3072381db0e9e65f4c0d0d
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
+  SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
 
-PODFILE CHECKSUM: 0f172993586abb710c30fecb15c81fc1dff873ff
+PODFILE CHECKSUM: 6511629712dacf1575625250a5d60d79b5ffd1d2
 
 COCOAPODS: 1.11.2

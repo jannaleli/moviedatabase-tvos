@@ -11,6 +11,7 @@ target 'MovieDatabasetVOS' do
   pod 'Alamofire', '~> 5.5'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Swinject'
+  pod 'SwinjectAutoregistration', '2.7.0'
   # Pods for MovieDatabasetVOS
 
   target 'MovieDatabasetVOSTests' do
