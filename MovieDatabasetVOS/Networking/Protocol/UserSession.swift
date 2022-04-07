@@ -16,6 +16,7 @@ public protocol UserSession {
     var isAuthenticated: Bool { get }
     var sessionEndedPublisher: AnyPublisher<Void, Never> { get }
     
-    func fetchMovies() async 
+    func fetchMovies() async
+    func invalidate()
     
 }

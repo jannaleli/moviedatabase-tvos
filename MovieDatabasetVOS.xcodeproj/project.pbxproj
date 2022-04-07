@@ -10,6 +10,7 @@
 		102A223327EC9B9000BC0B69 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A223227EC9B9000BC0B69 /* Theme.swift */; };
 		102A223527EC9B9B00BC0B69 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A223427EC9B9B00BC0B69 /* Colors.swift */; };
 		10816F9C27F4D569001821D3 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10816F9B27F4D569001821D3 /* HomepageView.swift */; };
+		108B94A927FF125F009EF6F2 /* DefaultUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B94A827FF125F009EF6F2 /* DefaultUserSession.swift */; };
 		10A214B827EBCA7100E135EC /* ActivationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A214B727EBCA7100E135EC /* ActivationCoordinator.swift */; };
 		10A214BA27EBCDCB00E135EC /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A214B927EBCDCB00E135EC /* StackView.swift */; };
 		10B4B2A027ECF45C00CD1123 /* AuthViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B4B29F27ECF45C00CD1123 /* AuthViewSwiftUI.swift */; };
@@ -64,6 +65,7 @@
 		102A223227EC9B9000BC0B69 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		102A223427EC9B9B00BC0B69 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		10816F9B27F4D569001821D3 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
+		108B94A827FF125F009EF6F2 /* DefaultUserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserSession.swift; sourceTree = "<group>"; };
 		10A214B727EBCA7100E135EC /* ActivationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationCoordinator.swift; sourceTree = "<group>"; };
 		10A214B927EBCDCB00E135EC /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		10B4B29F27ECF45C00CD1123 /* AuthViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewSwiftUI.swift; sourceTree = "<group>"; };
@@ -161,6 +163,14 @@
 				10816F9B27F4D569001821D3 /* HomepageView.swift */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		108B94A727FF11BB009EF6F2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2E37A27FB75C900AA75A4 /* UserSession.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		10A214B127EBC8F700E135EC /* Component */ = {
@@ -327,8 +337,9 @@
 		ABE2E37927FB75BA00AA75A4 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				108B94A727FF11BB009EF6F2 /* Protocol */,
 				ABE2E37C27FB764200AA75A4 /* Model */,
-				ABE2E37A27FB75C900AA75A4 /* UserSession.swift */,
+				108B94A827FF125F009EF6F2 /* DefaultUserSession.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -613,6 +624,7 @@
 				ABE2E38527FB7AC200AA75A4 /* ViewModel.swift in Sources */,
 				AB3A7F0127EB519B00E58101 /* AppDelegate.swift in Sources */,
 				102A223327EC9B9000BC0B69 /* Theme.swift in Sources */,
+				108B94A927FF125F009EF6F2 /* DefaultUserSession.swift in Sources */,
 				10E247FB27EB6193008D3887 /* UIButton.swift in Sources */,
 				10E247F927EB60F8008D3887 /* UIView.swift in Sources */,
 				10E247F027EB58B1008D3887 /* MainCoordinator.swift in Sources */,
