@@ -7,6 +7,7 @@
 
 import Foundation
 import Swinject
+import SwinjectAutoregistration
 final class DependencyProvider {
     
     let container = Container()
@@ -14,7 +15,8 @@ final class DependencyProvider {
     
     init() {
         assembler = Assembler(
-            [AuthenticationAssembly()],
+            [LoginAssembly(),
+             NetworkAssembly()],
             container: container
         )
     }

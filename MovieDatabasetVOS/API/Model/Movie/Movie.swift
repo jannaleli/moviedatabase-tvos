@@ -7,3 +7,6 @@
 
 import Foundation
 
+public struct APIMovieTMDB: Codable {
+    public let url: URL
+}

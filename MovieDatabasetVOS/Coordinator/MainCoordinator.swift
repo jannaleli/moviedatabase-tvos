@@ -45,23 +45,23 @@ final class MainCoordinator: Coordinator {
     }
     
     private func startLoginView() {
-        let coordinator = ActivationCoordinator(navigationController: navigationController!)
+        let coordinator = LoginCoordinator(assembler: assembler)
         coordinator.delegate = self
         childCoordinators = [coordinator]
         coordinator.start()
+        navigationController?.setViewControllers([coordinator.loginViewController], animated: false)
+    }
+    
+    private func showMain() {
+        
     }
 }
 
-extension MainCoordinator: ActivationCoordinatorDelegate {
-
+extension MainCoordinator: LoginCoordinatorDelegate {
+    func didLogin(_ sender: LoginCoordinator) {
     
-    func goToRegistrationCodeView() {
-        print("Go To Registration Code View")
     }
     
 
-    
-
-    
     
 }

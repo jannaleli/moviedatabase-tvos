@@ -6,26 +6,35 @@
 //
 
 import Foundation
-import UIKit
+import SwiftUI
+import Firebase
 
 public protocol LoginViewControllerDelegate: AnyObject {
     func loginCompleted()
 }
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIHostingController<LoginView> {
 
     weak var delegate: LoginViewControllerDelegate?
-    var loginView = LoginView()
     
-    
-    override func loadView() {
-        loginView.delegate = self
-        view = loginView
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        ///TODO: Place a viewModel delegate here since I think we are using viewModel
+        ///as a gateway between SwiftUI Views and ViewController
+        ///Done
+        rootView.viewModel.delegate = self
     }
 }
 
-extension LoginViewController: LoginViewDelegate {
-    func loginSelected() {
-        delegate?.loginCompleted()
+extension LoginViewController: LoginViewModelDelegate {
+    func didLogin(_ user: User) {
+        print(user)
     }
+    
+ 
+    
 }
+
+
+

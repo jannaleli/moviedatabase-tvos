@@ -12,6 +12,8 @@ target 'MovieDatabasetVOS' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Swinject'
   pod 'SwinjectAutoregistration', '2.7.0'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
   # Pods for MovieDatabasetVOS
 
   target 'MovieDatabasetVOSTests' do
