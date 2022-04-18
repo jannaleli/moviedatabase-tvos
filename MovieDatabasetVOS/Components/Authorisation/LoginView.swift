@@ -24,7 +24,7 @@ struct LoginView: View {
             Button(action: { Task { await viewModel.loginUser() } }) {
                 Text("Login")
             }
-        }.opacity(isLoading ? 1.0 : 0)
+        }.opacity(isLoading ? 0.0 : 1.0)
         
         if(isLoading){
             ProgressView()
