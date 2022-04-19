@@ -29,7 +29,7 @@ class LoginViewController: UIHostingController<LoginView> {
 
 extension LoginViewController: LoginViewModelDelegate {
     func didLogin(_ user: User) {
-        print(user)
+        delegate?.loginCompleted()
     }
     
  
