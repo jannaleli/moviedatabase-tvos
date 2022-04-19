@@ -42,7 +42,7 @@ final class LoginCoordinator: Coordinator {
 
 extension LoginCoordinator: LoginViewControllerDelegate {
     func loginCompleted() {
-        print("Start the movie here")
+        
     }
     
 }

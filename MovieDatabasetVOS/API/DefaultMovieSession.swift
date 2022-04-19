@@ -8,18 +8,10 @@
 import Foundation
 import Combine
 
-public final class DefaultMovieSession {
-    private let _sessionEndedPublisher = PassthroughSubject<Void, Error>()
-    //This is just a private equivalent of the publicly available sessionEndedPublisher
-    private var cancellable = Set<AnyCancellable>()
-}
-
-//MARK: - Movie Session
-
-extension DefaultMovieSession: MovieSession {
-    public func getMovies() async {
-        let request = HTTPRequestBuilder(baseURL: <#T##URL#>)
+public final class DefeaultMovieSession{
+    // TODO: Place the base URL here.
+    ///What can we do here 
+    public init() {
+        let url: URL = URL(string: "https://api.themoviedb.org/3/")!
     }
-    
-    
 }
