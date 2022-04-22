@@ -12,6 +12,12 @@ import SwinjectAutoregistration
 final class NetworkAssembly: Assembly {
     func assemble(container: Container) {
         container.autoregister(UserSession.self, initializer:
-                                DefaultUserSession.init) //TODO: View Model
+                                DefaultUserSession.init) 
+        
+        container.register(MovieSession.self) { r in
+            DefaultMovieSession(
+                http: DefaultHTTPSession()
+            )
+        }
     }
 }

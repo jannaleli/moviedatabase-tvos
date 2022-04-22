@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct HomepageView: View {
+    @Store var viewModel: HomepageViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).task {
+            
+            await viewModel.fetchMovies()
+        }
     }
 }
 
-struct HomepageView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomepageView()
-    }
-}
+//struct HomepageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomepageView(viewModel: DefaultHomepageViewModel(movieSession: DefaultMovieSession()))
+//    }
+//}

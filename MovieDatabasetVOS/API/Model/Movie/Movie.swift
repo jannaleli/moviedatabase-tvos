@@ -8,5 +8,11 @@
 import Foundation
 
 public struct APIMovieTMDB: Codable {
-    public let url: URL
+    let origin_title: String
+    let overview: String
+    let poster_path: String
+}
+
+struct MovieItemList: Codable {
+    var results: [APIMovieTMDB]
 }
