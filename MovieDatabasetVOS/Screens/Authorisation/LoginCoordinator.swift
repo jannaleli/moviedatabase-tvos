@@ -35,6 +35,11 @@ final class LoginCoordinator: Coordinator {
         
     }
     
+    func loginDone() {
+        print("Should go back to Main Coordinator")
+        delegate?.didLogin(self)
+    }
+    
     
 }
 
@@ -42,7 +47,7 @@ final class LoginCoordinator: Coordinator {
 
 extension LoginCoordinator: LoginViewControllerDelegate {
     func loginCompleted() {
-        
+        self.loginDone()
     }
     
 }

@@ -11,8 +11,8 @@ import SwinjectAutoregistration
 
 final class HomeAssembly: Assembly {
     func assemble(container: Container) {
-           container.autoregister(LoginViewModel.self, initializer:
-                                                DefaultLoginViewModel.init) //TODO: View Model
+           container.autoregister(HomepageViewModel.self, initializer:
+                                                DefaultHomepageViewModel.init) //TODO: View Model
             container.register(HomepageView.self) { resolver in
                             HomepageView(
                                 viewModel: resolver.resolve()

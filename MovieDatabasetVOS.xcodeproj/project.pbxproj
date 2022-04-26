@@ -21,6 +21,7 @@
 		108B94A927FF125F009EF6F2 /* DefaultMovieSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108B94A827FF125F009EF6F2 /* DefaultMovieSession.swift */; };
 		109F88F1280DEC49005FEA91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 109F88F0280DEC49005FEA91 /* GoogleService-Info.plist */; };
 		10A214BA27EBCDCB00E135EC /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A214B927EBCDCB00E135EC /* StackView.swift */; };
+		10AD2B5C2817563B00891589 /* MovieComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AD2B5B2817563B00891589 /* MovieComponent.swift */; };
 		10BABA6727F4DA06007DDC10 /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BABA6627F4DA05007DDC10 /* MovieItem.swift */; };
 		10C8B4E427FF4C9700B0DA28 /* HTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C8B4E327FF4C9700B0DA28 /* HTTPSession.swift */; };
 		10C8B4E627FF4CA400B0DA28 /* DefaultHTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C8B4E527FF4CA400B0DA28 /* DefaultHTTPSession.swift */; };
@@ -97,6 +98,7 @@
 		108B94A827FF125F009EF6F2 /* DefaultMovieSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMovieSession.swift; sourceTree = "<group>"; };
 		109F88F0280DEC49005FEA91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		10A214B927EBCDCB00E135EC /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		10AD2B5B2817563B00891589 /* MovieComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieComponent.swift; sourceTree = "<group>"; };
 		10BABA6627F4DA05007DDC10 /* MovieItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
 		10C8B4E327FF4C9700B0DA28 /* HTTPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPSession.swift; sourceTree = "<group>"; };
 		10C8B4E527FF4CA400B0DA28 /* DefaultHTTPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHTTPSession.swift; sourceTree = "<group>"; };
@@ -220,10 +222,10 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		10A214B127EBC8F700E135EC /* Component */ = {
+		10AD2B5A2817562A00891589 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				10816F9A27F4D4F5001821D3 /* HomePage */,
+				10AD2B5B2817563B00891589 /* MovieComponent.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -308,12 +310,13 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		10E247F127EB5F35008D3887 /* Components */ = {
+		10E247F127EB5F35008D3887 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				10816F9A27F4D4F5001821D3 /* HomePage */,
 				10E247F227EB5F47008D3887 /* Authorisation */,
 			);
-			path = Components;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		10E247F227EB5F47008D3887 /* Authorisation */ = {
@@ -412,14 +415,14 @@
 		AB3A7EFF27EB519B00E58101 /* MovieDatabasetVOS */ = {
 			isa = PBXGroup;
 			children = (
+				10AD2B5A2817562A00891589 /* Component */,
 				AB7AA06D2812136200B54AEC /* Extension */,
 				109F88F0280DEC49005FEA91 /* GoogleService-Info.plist */,
 				10C8B4E127FF4C6100B0DA28 /* Networking */,
 				ABE2E37927FB75BA00AA75A4 /* API */,
 				102A223027EC9A0800BC0B69 /* Shared */,
-				10A214B127EBC8F700E135EC /* Component */,
 				10E247F727EB60E1008D3887 /* Extensions */,
-				10E247F127EB5F35008D3887 /* Components */,
+				10E247F127EB5F35008D3887 /* Screens */,
 				10E247EC27EB5715008D3887 /* Coordinator */,
 				AB3A7F0027EB519B00E58101 /* AppDelegate.swift */,
 				AB3A7F0227EB519B00E58101 /* ViewController.swift */,
@@ -774,6 +777,7 @@
 				1028D95D2805F4CA0083F0B1 /* LoginView.swift in Sources */,
 				10E247FB27EB6193008D3887 /* UIButton.swift in Sources */,
 				1028D9542805F1FB0083F0B1 /* LoginViewModel.swift in Sources */,
+				10AD2B5C2817563B00891589 /* MovieComponent.swift in Sources */,
 				10E247F927EB60F8008D3887 /* UIView.swift in Sources */,
 				10E247F027EB58B1008D3887 /* MainCoordinator.swift in Sources */,
 				1064DC0728074F7F00B63E2F /* NetworkAssembly.swift in Sources */,

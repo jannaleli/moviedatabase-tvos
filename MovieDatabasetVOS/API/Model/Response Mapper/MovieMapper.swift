@@ -9,9 +9,10 @@ import Foundation
 
 final class MovieMapper: HTTPResponseMapper {
     func map(data: Data, response: HTTPURLResponse) throws -> APIMovieTMDB {
+        print(response.statusCode)
         switch response.statusCode {
         case 200, 201:
-            return try data.decode(JSONDecoder())
+            return try data.decode()
         default:
             throw HTTPError.cannotDecodeRawData
         }

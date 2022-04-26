@@ -34,7 +34,7 @@ final class MainCoordinator: Coordinator {
     }
     
     func start() {
-        startLoginView()
+        showMain()
         loading()
     }
     // MARK: - Private Methods
@@ -53,15 +53,25 @@ final class MainCoordinator: Coordinator {
     }
     
     private func showMain() {
+        let homeCoordinator = HomepageCoordinator(assembler: assembler)
+        homeCoordinator.delegate = self
+        childCoordinators = [homeCoordinator]
+        homeCoordinator.start()
+        navigationController?.setViewControllers([homeCoordinator.homepageViewController], animated: false)
         
     }
 }
 
 extension MainCoordinator: LoginCoordinatorDelegate {
     func didLogin(_ sender: LoginCoordinator) {
-    
+        print("We're now in main")
+        self.showMain()
     }
     
 
+    
+}
+
+extension MainCoordinator: HomepageCoordinatorDelegate {
     
 }

@@ -18,7 +18,7 @@ struct LoginView: View {
     var body: some View {
         VStack {
                 TextField("Username", text: $username)
-                .frame(width: 500, alignment: .center)
+                .frame(width: 500,  alignment: .center)
                 SecureField("Password", text: $password)
                 .frame(width: 500, alignment: .center)
             Button(action: { Task { await viewModel.loginUser() } }) {

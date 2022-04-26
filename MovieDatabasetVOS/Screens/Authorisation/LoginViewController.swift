@@ -13,7 +13,7 @@ public protocol LoginViewControllerDelegate: AnyObject {
     func loginCompleted()
 }
 
-class LoginViewController: UIHostingController<LoginView> {
+final class LoginViewController: UIHostingController<LoginView> {
 
     weak var delegate: LoginViewControllerDelegate?
     
@@ -29,7 +29,7 @@ class LoginViewController: UIHostingController<LoginView> {
 
 extension LoginViewController: LoginViewModelDelegate {
     func didLogin(_ user: User) {
-        print(user)
+        delegate?.loginCompleted()
     }
     
  

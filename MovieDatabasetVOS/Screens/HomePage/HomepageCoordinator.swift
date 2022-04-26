@@ -9,7 +9,13 @@ import Foundation
 import UIKit
 import Swinject
 
+protocol HomepageCoordinatorDelegate: AnyObject {
+    
+}
+
 final class HomepageCoordinator: Coordinator {
+    
+    weak var delegate: HomepageCoordinatorDelegate?
     var childCoordinators: [Coordinator] = []
     
     private var viewController: UIViewController {
