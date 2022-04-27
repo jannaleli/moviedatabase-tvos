@@ -58,6 +58,7 @@
 		AB7AA074281229A000B54AEC /* HomepageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7AA073281229A000B54AEC /* HomepageAssembly.swift */; };
 		AB7AA076281229AC00B54AEC /* HomepageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7AA075281229AC00B54AEC /* HomepageCoordinator.swift */; };
 		AB7AA07828122F4D00B54AEC /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7AA07728122F4D00B54AEC /* HomepageViewController.swift */; };
+		AB8D4CBD2818227400A9BF49 /* ButtonMovieStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D4CBC2818227400A9BF49 /* ButtonMovieStyle.swift */; };
 		ABE2E37827FB61C900AA75A4 /* AnyObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E37727FB61C900AA75A4 /* AnyObservableObject.swift */; };
 		ABE2E37B27FB75C900AA75A4 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E37A27FB75C900AA75A4 /* UserSession.swift */; };
 		ABE2E37F27FB766A00AA75A4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E37E27FB766A00AA75A4 /* Movie.swift */; };
@@ -139,6 +140,7 @@
 		AB7AA073281229A000B54AEC /* HomepageAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageAssembly.swift; sourceTree = "<group>"; };
 		AB7AA075281229AC00B54AEC /* HomepageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageCoordinator.swift; sourceTree = "<group>"; };
 		AB7AA07728122F4D00B54AEC /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		AB8D4CBC2818227400A9BF49 /* ButtonMovieStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMovieStyle.swift; sourceTree = "<group>"; };
 		ABE2E37727FB61C900AA75A4 /* AnyObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyObservableObject.swift; sourceTree = "<group>"; };
 		ABE2E37A27FB75C900AA75A4 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		ABE2E37E27FB766A00AA75A4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 		10AD2B5A2817562A00891589 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				AB8D4CBA2818225F00A9BF49 /* Button */,
 				10AD2B5B2817563B00891589 /* MovieComponent.swift */,
 			);
 			path = Component;
@@ -465,6 +468,22 @@
 				AB7AA06E2812138300B54AEC /* JSONDecoder+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		AB8D4CBA2818225F00A9BF49 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D4CBB2818226600A9BF49 /* Style */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		AB8D4CBB2818226600A9BF49 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D4CBC2818227400A9BF49 /* ButtonMovieStyle.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 		ABE2E37927FB75BA00AA75A4 /* API */ = {
@@ -789,6 +808,7 @@
 				AB16952E280F8435000CAECC /* HTTPRequestBuilder.swift in Sources */,
 				ABE2E37827FB61C900AA75A4 /* AnyObservableObject.swift in Sources */,
 				10FBC73627FB489300F6F205 /* ErasedObservableObject.swift in Sources */,
+				AB8D4CBD2818227400A9BF49 /* ButtonMovieStyle.swift in Sources */,
 				102A223527EC9B9B00BC0B69 /* Colors.swift in Sources */,
 				10E247EE27EB5722008D3887 /* Coordinator.swift in Sources */,
 				AB7AA06F2812138300B54AEC /* JSONDecoder+Extension.swift in Sources */,

@@ -19,7 +19,7 @@ struct MovieComponent: View {
                         .frame(width: 500)
                     Text(movieName)
                 }
-            }.buttonStyle(PlainButtonStyle())
+            }.buttonStyle(ButtonMovieStyle())
 
         
 
