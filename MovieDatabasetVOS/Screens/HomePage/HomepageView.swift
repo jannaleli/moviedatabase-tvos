@@ -14,7 +14,7 @@ struct HomepageView: View {
             LazyHStack {
                 ForEach(viewModel.movies) { profile in
                     MovieComponent(imageUrl: profile.poster_path,
-                                   movieName: profile.original_title)
+                                       movieName: profile.original_title)
                 }
             }
 

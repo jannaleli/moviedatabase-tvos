@@ -18,6 +18,7 @@ struct MovieComponent: View {
                     AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500" + imageUrl))
                         .frame(width: 500)
                     Text(movieName)
+                        .shadow(radius: 20)
                 }
             }.buttonStyle(ButtonMovieStyle())
 

@@ -13,7 +13,7 @@ public protocol HomepageViewControllerDelegate: AnyObject {
     func moviesLoaded()
 }
 
-final class HomepageViewController: UIHostingController<HomepageView> {
+final class HomepageViewController: UIHostingController<Navigation> {
     
     weak var delegate: HomepageViewControllerDelegate?
     

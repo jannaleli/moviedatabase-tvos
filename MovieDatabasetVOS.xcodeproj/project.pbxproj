@@ -59,6 +59,7 @@
 		AB7AA076281229AC00B54AEC /* HomepageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7AA075281229AC00B54AEC /* HomepageCoordinator.swift */; };
 		AB7AA07828122F4D00B54AEC /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7AA07728122F4D00B54AEC /* HomepageViewController.swift */; };
 		AB8D4CBD2818227400A9BF49 /* ButtonMovieStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D4CBC2818227400A9BF49 /* ButtonMovieStyle.swift */; };
+		AB8D4CC0281B6C0000A9BF49 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8D4CBF281B6C0000A9BF49 /* Navigation.swift */; };
 		ABE2E37827FB61C900AA75A4 /* AnyObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E37727FB61C900AA75A4 /* AnyObservableObject.swift */; };
 		ABE2E37B27FB75C900AA75A4 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E37A27FB75C900AA75A4 /* UserSession.swift */; };
 		ABE2E37F27FB766A00AA75A4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2E37E27FB766A00AA75A4 /* Movie.swift */; };
@@ -141,6 +142,7 @@
 		AB7AA075281229AC00B54AEC /* HomepageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageCoordinator.swift; sourceTree = "<group>"; };
 		AB7AA07728122F4D00B54AEC /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		AB8D4CBC2818227400A9BF49 /* ButtonMovieStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMovieStyle.swift; sourceTree = "<group>"; };
+		AB8D4CBF281B6C0000A9BF49 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		ABE2E37727FB61C900AA75A4 /* AnyObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyObservableObject.swift; sourceTree = "<group>"; };
 		ABE2E37A27FB75C900AA75A4 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		ABE2E37E27FB766A00AA75A4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 		10E247F127EB5F35008D3887 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				AB8D4CBE281B6A5E00A9BF49 /* Navigation */,
 				10816F9A27F4D4F5001821D3 /* HomePage */,
 				10E247F227EB5F47008D3887 /* Authorisation */,
 			);
@@ -484,6 +487,14 @@
 				AB8D4CBC2818227400A9BF49 /* ButtonMovieStyle.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		AB8D4CBE281B6A5E00A9BF49 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D4CBF281B6C0000A9BF49 /* Navigation.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		ABE2E37927FB75BA00AA75A4 /* API */ = {
@@ -803,6 +814,7 @@
 				10BABA6727F4DA06007DDC10 /* MovieItem.swift in Sources */,
 				1028D96328064B580083F0B1 /* Resolver+Assembler.swift in Sources */,
 				1028D9582805F2640083F0B1 /* LoginAssembly.swift in Sources */,
+				AB8D4CC0281B6C0000A9BF49 /* Navigation.swift in Sources */,
 				10C8B4E927FF60B600B0DA28 /* HTTPResponseMapper.swift in Sources */,
 				10FBC73B27FB883C00F6F205 /* Dependency Provider.swift in Sources */,
 				AB16952E280F8435000CAECC /* HTTPRequestBuilder.swift in Sources */,

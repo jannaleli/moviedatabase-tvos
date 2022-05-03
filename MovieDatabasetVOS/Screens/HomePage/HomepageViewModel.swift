@@ -14,6 +14,18 @@ protocol HomepageViewModel: ViewModel {
     func fetchMovies() async
 }
 
+final class MockHomepageViewModel: ObservableObject, HomepageViewModel {
+    var delegate: HomepageViewModelDelegate?
+    
+    var movies: [MovieData] = []
+    
+    func fetchMovies() async {
+        
+    }
+    
+    
+}
+
 protocol HomepageViewModelDelegate: AnyObject {
     func didFetchMovies(result: APIMovieTMDB)
 }

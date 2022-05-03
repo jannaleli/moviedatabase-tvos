@@ -8,6 +8,7 @@
 import Foundation
 import Swinject
 import SwinjectAutoregistration
+import SwiftUI
 
 final class HomeAssembly: Assembly {
     func assemble(container: Container) {
@@ -15,6 +16,11 @@ final class HomeAssembly: Assembly {
                                                 DefaultHomepageViewModel.init) //TODO: View Model
             container.register(HomepageView.self) { resolver in
                             HomepageView(
+                                viewModel: resolver.resolve()
+                            )
+                        }
+            container.register(Navigation.self) { resolver in
+                            Navigation(
                                 viewModel: resolver.resolve()
                             )
                         }
