@@ -436,6 +436,7 @@ PODS:
   - Swinject (2.8.1)
   - SwinjectAutoregistration (2.7.0):
     - Swinject (~> 2.7)
+  - XCDYouTubeKit (2.15.2)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
@@ -445,6 +446,7 @@ DEPENDENCIES:
   - SwiftyJSON (~> 4.0)
   - Swinject
   - SwinjectAutoregistration (= 2.7.0)
+  - XCDYouTubeKit (~> 2.15)
 
 SPEC REPOS:
   trunk:
@@ -468,6 +470,7 @@ SPEC REPOS:
     - SwiftyJSON
     - Swinject
     - SwinjectAutoregistration
+    - XCDYouTubeKit
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -490,7 +493,8 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
   SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
+  XCDYouTubeKit: b120aced3d8638ffb570c5450cddb5a1dac448c7
 
-PODFILE CHECKSUM: d3818be0b752d9b8e44c08b256ccd42dddf2a265
+PODFILE CHECKSUM: 237f9e16b7a15e82ae3b16ac21618c1ee675e46f
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

@@ -39,6 +39,12 @@ final class DefaultLoginViewModel: ObservableObject, LoginViewModel {
     }
         //TODO: For now, viewModel just goes directly to
     
+    func success(user: User) {
+        DispatchQueue.main.async {
+            self.delegate?.didLogin(user)
+        }
+    }
+    
     @MainActor
     func loginUser() async {
         print("Login now")
@@ -54,7 +60,7 @@ final class DefaultLoginViewModel: ObservableObject, LoginViewModel {
                     }
                 }, receiveValue: { [weak self] user  in
                     guard let self = self, let user = user else { return }
-                    self.delegate?.didLogin(user)
+                    self.success(user: user)
                 })
                 .store(in: &cancellable)
             

@@ -9,6 +9,5 @@ import Foundation
 public protocol MovieSession {
     var http: HTTPSession { get set }
     func fetchMovies() async throws -> APIMovieTMDB
-    //TODO: Put a movie model in here
-
+    func fetchGenres() async throws -> GenreList
 }

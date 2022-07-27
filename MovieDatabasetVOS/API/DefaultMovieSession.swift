@@ -34,7 +34,15 @@ extension DefaultMovieSession: MovieSession {
         //TODO: Add a Movie Mapper here :) 
         return try await http.data(request: request, mapper: MovieMapper())
     }
-    
+    public func fetchGenres () async throws -> GenreList {
+        guard let baseURL = URL(string: baseURL) else { throw HTTPError.invalidCodeResponse }
+        
+        let request = HTTPRequestBuilder(baseURL: baseURL)
+            .set(path: "genre/movie/list?api_key=\(apiKey)&language=en-US")
+            .build()
+        
+        return try await http.data(request: request, mapper: GenreMapper())
+    }
 
     
     
