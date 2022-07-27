@@ -37,9 +37,11 @@ extension URLRequest {
     init(request: HTTPRequest) throws {
         
         // path
-        let baseURL = request.baseURL.appendingPathComponent(request.path)
-        
-        guard var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false) else {
+        let baseURL = request.baseURL.appendingPathComponent(request.path).absoluteString.removingPercentEncoding
+        let baseURLTransform = URL(string: baseURL!)
+        //TODO: UNWRAP SAFELY PLEASE
+        //TODO: ? -> %3 which is obviously an issue
+        guard var components = URLComponents(url: baseURLTransform!, resolvingAgainstBaseURL: false) else {
             throw HTTPError.invalidRequest(request: request)
         }
         

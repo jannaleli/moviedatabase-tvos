@@ -14,6 +14,7 @@ target 'MovieDatabasetVOS' do
   pod 'SwinjectAutoregistration', '2.7.0'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod "XCDYouTubeKit", "~> 2.15"
   # Pods for MovieDatabasetVOS
 
   target 'MovieDatabasetVOSTests' do

@@ -14,6 +14,11 @@ protocol MainCoordinatorDelegate: AnyObject {
 }
 
 final class MainCoordinator: Coordinator {
+    
+    private enum Screen {
+        case menu
+    }
+    
     var childCoordinators = [Coordinator]()
     
      var navigationController: UINavigationController?
@@ -23,6 +28,8 @@ final class MainCoordinator: Coordinator {
     var window = UIWindow()
     
     weak var delegate: MainCoordinatorDelegate?
+    
+    private var coordinators: [Screen: Coordinator] = .init()
     
     // MARK: - Initialization
 
@@ -34,6 +41,7 @@ final class MainCoordinator: Coordinator {
     }
     
     func start() {
+       // showMain()
         startLoginView()
         loading()
     }
@@ -52,16 +60,28 @@ final class MainCoordinator: Coordinator {
         navigationController?.setViewControllers([coordinator.loginViewController], animated: false)
     }
     
-    private func showMain() {
-        
+
+    
+    private func showMenu() {
+        let menu = NavigationCoordinator(assembler: assembler)
+        coordinators[.menu] = menu
+        menu.start()
+        navigationController?.setViewControllers([menu.viewController], animated: true)
+    }
+    
+    private func showSwimlane() {
+        let swimlane: RailViewController = assembler.resolve()
+        navigationController?.pushViewController(swimlane, animated: true)
     }
 }
 
 extension MainCoordinator: LoginCoordinatorDelegate {
     func didLogin(_ sender: LoginCoordinator) {
-    
+        print("We're now in main")
+        self.showMenu()
     }
     
 
     
 }
+

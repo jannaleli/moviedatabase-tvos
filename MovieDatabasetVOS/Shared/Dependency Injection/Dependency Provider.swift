@@ -16,7 +16,9 @@ final class DependencyProvider {
     init() {
         assembler = Assembler(
             [LoginAssembly(),
-             NetworkAssembly()],
+             NetworkAssembly(),
+             SwimlanePageAssembly(),
+             NavigationAssembly()],
             container: container
         )
     }
