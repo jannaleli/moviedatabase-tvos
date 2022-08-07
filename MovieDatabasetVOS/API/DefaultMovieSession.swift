@@ -16,11 +16,6 @@ public final class DefaultMovieSession {
     init(http: HTTPSession) {
         self.http = http
     }
-
-    //TODO: UNWRAP SAFELY PLEASE
-    
-    // TODO: Place the base URL here.
-    ///What can we do here 
 }
 
 extension DefaultMovieSession: MovieSession {
@@ -43,8 +38,13 @@ extension DefaultMovieSession: MovieSession {
         
         return try await http.data(request: request, mapper: GenreMapper())
     }
-
     
-    
-    
+    public func fetchVideos(movieId: String) async throws -> APIVideoTMDB {
+        guard let baseURL = URL(string: baseURL) else { throw HTTPError.invalidCodeResponse }
+        
+        let request = HTTPRequestBuilder(baseURL: baseURL)
+            .set(path: "movie/\(movieId)/videos?api_key=\(apiKey)&language=en-US")
+            .build()
+        return try await http.data(request: request, mapper: VideoMapper())
+    }
 }

@@ -10,4 +10,5 @@ public protocol MovieSession {
     var http: HTTPSession { get set }
     func fetchMovies() async throws -> APIMovieTMDB
     func fetchGenres() async throws -> GenreList
+    func fetchVideos(movieId: String) async throws -> APIVideoTMDB
 }

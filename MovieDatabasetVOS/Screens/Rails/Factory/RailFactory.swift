@@ -15,7 +15,8 @@ final class DefaultRailFactory: RailFactory {
     func makeViewModel(rail: String) -> RailType? {
         switch rail {
         case "movie":
-            return .movie(.init(movieSession: movieSession))
+            return .movie(.init(movieSession: movieSession,
+                                watchActivityService: watchActivityService))
         case "genre":
             return .genre(.init(movieSession: movieSession))
         default:
@@ -24,8 +25,11 @@ final class DefaultRailFactory: RailFactory {
     }
     
     private let movieSession: MovieSession
+    private let watchActivityService: WatchActivityService
     
-    init(movieSession: MovieSession) {
+    init(movieSession: MovieSession,
+         watchActivityService: WatchActivityService) {
         self.movieSession = movieSession
+        self.watchActivityService = watchActivityService
     }
 }

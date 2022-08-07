@@ -14,6 +14,7 @@ struct CardView: View {
     var borderWidt: CGFloat = 8
     var imagePadding: EdgeInsets = .init(top: 30, leading: 30, bottom: 30, trailing: 30)
     var type: CardType = .regular
+    var action: () -> Void
 
     @FocusState private var isFocused: Bool
     
@@ -21,8 +22,13 @@ struct CardView: View {
         VStack {
             ZStack {
                 if let image = image {
-                    AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500" + image))
-                        .padding(imagePadding)
+                    Button(action: action) {
+                        AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500" + image))
+                               // .padding(imagePadding)
+                    }
+                    .buttonStyle(ButtonMovieStyle())
+
+                        
                 } else {
                     Text(title)
                         .shadow(radius: 20)
@@ -32,7 +38,6 @@ struct CardView: View {
             .frame(size: type.size)
 
         }
-        .focusable(true)
         .focused($isFocused)
     }
     
@@ -44,6 +49,7 @@ struct CardView: View {
                 lineWidth: borderWidt
             )
             .padding(borderWidt/2)
+            .scaleEffect(isFocused ? 1.0 : 1.12)
             .animation(.easeOut(duration: 0.15), value: isFocused)
     }
 }

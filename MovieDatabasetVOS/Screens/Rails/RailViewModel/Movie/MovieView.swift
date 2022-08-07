@@ -14,7 +14,9 @@ struct MovieView: View {
             LazyHStack {
                 ForEach(viewModel.items) { item in
                     CardView(image: item.poster_path,
-                             title: item.original_title)
+                             title: item.original_title,
+                             action: { Task { try await viewModel.handle(movieId: item.id.codingKey.stringValue) }
+                    })
                 }
             }
 

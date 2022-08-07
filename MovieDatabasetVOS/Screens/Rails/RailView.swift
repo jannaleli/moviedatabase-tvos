@@ -19,6 +19,7 @@ struct RailView: View {
                     ForEach(viewModel.railsTransformed) { item in
                         makeSwimlane(type:  item)
                     }
+                    .padding(.leading, 100)
                     
                 }else {
                     ProgressView()

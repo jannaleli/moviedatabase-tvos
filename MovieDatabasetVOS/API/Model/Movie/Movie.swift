@@ -17,7 +17,3 @@ public struct MovieData: Codable, Identifiable {
     let overview: String
     let poster_path: String
 }
-
-struct MovieItemList: Codable {
-    var results: [APIMovieTMDB]
-}

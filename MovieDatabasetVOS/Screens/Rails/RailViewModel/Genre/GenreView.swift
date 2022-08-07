@@ -15,7 +15,8 @@ struct GenreView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack {
                 ForEach(viewModel.items) { item in
-                    CardView(title: item.name)
+                    CardView(title: item.name,
+                             action: {})
                 }
             }
         }

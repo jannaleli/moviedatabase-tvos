@@ -17,7 +17,8 @@ struct Card: View {
             CardView(
                 image: viewModel.image ?? "",
                 title: viewModel.title,
-                type: type
+                type: type,
+                action: {}
             )
         }
         .buttonStyle(.card)

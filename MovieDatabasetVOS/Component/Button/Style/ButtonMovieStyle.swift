@@ -22,7 +22,7 @@ struct ButtonMovieStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .background(makeBackground())
-            .scaleEffect(makeScale())
+            //.scaleEffect(makeScale())
             .onChange(of: isFocused) { newValue in
                 withAnimation(.easeInOut(duration: 0.15)) {
                     focused = newValue

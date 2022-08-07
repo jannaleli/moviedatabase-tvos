@@ -15,6 +15,7 @@ struct TabUIView: View {
         ZStack {
             HStack(spacing: 0) {
                 makeMenu()
+                    .background(.blue)
                 Spacer()
             }
         }
@@ -42,7 +43,7 @@ struct TabUIView: View {
                 }
             }
             .fillHeight()
-            .frame(width: 500,alignment: .top)
+            .frame(width: 400,alignment: .top)
         
 
     }
